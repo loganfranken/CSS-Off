@@ -18,6 +18,7 @@ html, body
 {
 	margin: 0 auto;
 	max-width: 80em; /* 1280px */
+	overflow: hidden;
 }
 
 h1
@@ -40,6 +41,8 @@ header
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	position: relative;
+	z-index: 1;
 }
 
 header .issue-info
@@ -81,7 +84,7 @@ header h1
 	header h1
 	{
 		float: left;
-		font-size: 12em;
+		font-size: 11em;
 		letter-spacing: 0.1em;
 		line-height: 0.85em;
 		padding-top: 5.85%;
@@ -101,6 +104,7 @@ header h1
 	header .issue-info
 	{
 		float: right;
+		font-size: 0.6em;
 		padding-top: 14.55%;
 	}
 }
@@ -138,17 +142,74 @@ header h1
 	font-family: "Oswald", sans-serif;
 	font-size: 2em;
 	text-transform: uppercase;
-	text-shadow: 0 2px 2px #b9955e;
+	text-shadow: 0 2px 2px #B9955E;
 	padding: 5% 0 3%;
 }
 
 .feature .subheading
 {
-	color: #b9955e;
+	color: #B9955E;
 	display: block;
 	font-family: "Merriweather", serif;
 	font-size: 0.45em;
 	font-weight: 300;
 	letter-spacing: 0.15em;
 	text-shadow: none;
+}
+
+@media (min-width: 32em) /* ~500px */
+{
+	.feature h1
+	{
+		font-size: 3em;
+		padding: 3% 0 1%;
+	}
+
+	.feature .subheading
+	{
+		font-size: 0.3em;
+	}
+}
+
+@media (min-width: 56em) /* ~900px */
+{
+	.feature
+	{
+		float: right;
+		margin: -38% 2% 0 0;
+		position: relative;
+		width: 45%;
+	}
+
+	.feature h1
+	{
+		background: none;
+		color: #FDCD84;
+		line-height: 1.05em;
+		margin-top: 64%;
+		position: relative;
+		text-align: left;
+		text-shadow: none;
+		z-index: 1;
+	}
+
+	.feature .subheading
+	{
+		color: #CBB8A0;
+		font-size: 0.2em;
+		line-height: 1em;
+	}
+
+	.feature img
+	{
+		position: absolute;
+		top: 10%;
+		margin-left: -20%;
+		transform: rotate(-3deg);
+		max-width: 120%;
+	}
+}
+
+@media (min-width: 80em) /* ~1280px */
+{
 }
