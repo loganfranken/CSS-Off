@@ -184,13 +184,23 @@ header h1
 	.feature h1
 	{
 		background: none;
-		color: #FDCD84;
+		color: rgba(253, 205, 132, 0);
 		line-height: 1.05em;
 		margin-top: 64%;
 		position: relative;
 		text-align: left;
-		text-shadow: none;
+		text-shadow: -0.7em -0.2em 20px #333;
 		z-index: 1;
+	}
+
+	.feature h1:after
+	{
+		content: "Positioning Relatives";
+		color: rgba(253, 205, 132, 100);
+		left: -0.05em;
+		position: absolute;
+		text-shadow: none;
+		top: 0.5em;
 	}
 
 	.feature .subheading
@@ -212,4 +222,5 @@ header h1
 
 @media (min-width: 80em) /* ~1280px */
 {
+
 }
