@@ -175,9 +175,11 @@ header h1
 {
 	.feature
 	{
+		background: radial-gradient(ellipse 150px 10px at 30% 60.5%, #CCC 0%, white 100%);
 		float: right;
 		margin: -38% 2% 0 0;
 		position: relative;
+		padding-left: 10%;
 		width: 45%;
 	}
 
@@ -214,9 +216,9 @@ header h1
 	{
 		position: absolute;
 		top: 10%;
-		margin-left: -20%;
+		margin-left: -15%;
 		transform: rotate(-3deg);
-		max-width: 120%;
+		max-width: 100%;
 	}
 }
 
