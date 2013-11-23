@@ -19,6 +19,7 @@ html, body
 	margin: 0 auto;
 	max-width: 80em; /* 1280px */
 	overflow: hidden;
+	position: relative;
 }
 
 h1
@@ -83,6 +84,7 @@ header h1
 
 	header h1
 	{
+		color: #FFF;
 		float: left;
 		font-size: 11em;
 		letter-spacing: 0.1em;
@@ -175,11 +177,9 @@ header h1
 {
 	.feature
 	{
-		background: radial-gradient(ellipse 150px 10px at 30% 60.5%, #CCC 0%, white 100%);
-		float: right;
-		margin: -38% 2% 0 0;
-		position: relative;
-		padding-left: 10%;
+		position: absolute;
+		right: 0;
+		top: 4.5%;
 		width: 45%;
 	}
 
@@ -188,10 +188,11 @@ header h1
 		background: none;
 		color: rgba(253, 205, 132, 0);
 		line-height: 1.05em;
-		margin-top: 64%;
+		margin: 72% 0 0 -10%;
 		position: relative;
 		text-align: left;
 		text-shadow: -0.7em -0.2em 20px #333;
+		width: 1em;
 		z-index: 1;
 	}
 
@@ -199,7 +200,7 @@ header h1
 	{
 		content: "Positioning Relatives";
 		color: rgba(253, 205, 132, 100);
-		left: -0.05em;
+		left: -0.07em;
 		position: absolute;
 		text-shadow: none;
 		top: 0.5em;
@@ -212,17 +213,28 @@ header h1
 		line-height: 1em;
 	}
 
+	.feature-img-wrapper
+	{
+		background: radial-gradient(ellipse 150px 10px at 23% 91%, #777 0%, #FFF 100%);
+		margin-left: -45%;
+		position: absolute;
+		padding-bottom: 10%;
+		padding-left: 10%;
+		top: 10%;
+		max-width: 132%;
+	}
+
 	.feature img
 	{
-		position: absolute;
-		top: 10%;
-		margin-left: -15%;
 		transform: rotate(-3deg);
-		max-width: 100%;
 	}
 }
 
 @media (min-width: 80em) /* ~1280px */
 {
-
+	.feature h1
+	{
+		font-size: 4.25em;
+		margin: 68% 0 0 -10%;
+	}
 }
