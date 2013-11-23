@@ -1,10 +1,10 @@
-html, body, header h1, ul
+html, body, h1, ul, figure
 {
 	margin: 0;
 	padding: 0;
 }
 
-html, body
+body
 {
 	background: #FFF;
 }
@@ -519,4 +519,54 @@ header h1
 		float: none;
 		width: auto;
 	}
+}
+
+/* =ARTICLE-BLOCKS
+------------------------------------------------------- */
+
+.article-blocks
+{
+	margin: 1em 0;
+}
+
+.article-blocks h1
+{
+	background: #524741;
+	font-family: "Oswald", sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 3% 0;
+}
+
+.article-blocks .photo
+{
+	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+.article-blocks .photo img
+{
+	position: relative;
+	z-index: -1;
+}
+
+.article-blocks .info
+{
+	background: #71625A;
+	color: #FFF;
+	font-family: "Merriweather", sans-serif;
+	font-weight: 300;
+	padding: 5%;
+}
+
+.article-blocks .credit
+{
+	color: #B8B1AD;
+	font-size: 0.9em;
+}
+
+.article-blocks .credit a
+{
+	color: #B8B1AD;
+	text-decoration: none;
 }
