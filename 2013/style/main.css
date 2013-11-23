@@ -30,6 +30,8 @@ h1
 
 img
 {
+	display: block;
+	margin: 0 auto;
 	max-width: 100%;
 }
 
@@ -43,7 +45,7 @@ header
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 header .issue-info
@@ -181,6 +183,7 @@ header h1
 		right: 0;
 		top: 4.5%;
 		width: 45%;
+		z-index: 1;
 	}
 
 	.feature h1
@@ -193,7 +196,7 @@ header h1
 		text-align: left;
 		text-shadow: -0.7em -0.2em 20px #333;
 		width: 1em;
-		z-index: 1;
+		z-index: 2;
 	}
 
 	.feature h1:after
@@ -215,7 +218,7 @@ header h1
 
 	.feature-img-wrapper
 	{
-		background: radial-gradient(ellipse 150px 10px at 23% 91%, #777 0%, #FFF 100%);
+		background: radial-gradient(ellipse 150px 10px at 23% 91%, #777 0%, transparent 100%);
 		margin-left: -45%;
 		position: absolute;
 		padding-bottom: 10%;
@@ -236,5 +239,45 @@ header h1
 	{
 		font-size: 4.25em;
 		margin: 68% 0 0 -10%;
+	}
+}
+
+/* =ARTICLE-BOX-MODEL
+------------------------------------------------------- */
+
+.article-box-model
+{
+	background: #CDC9DD;
+	background: linear-gradient(to bottom, #CDC9DD 37%, #D9D5E5 37%, #CFCBDE 100%);
+	color: #6E6C77;
+	font-family: "Lato", sans-serif;
+	padding: 3% 5%;
+	text-align: center;
+}
+
+.article-box-model h1
+{
+	color: #5F5D66;
+	font-family: "Lora", serif;
+	font-weight: 700;
+}
+
+.article-box-model img
+{
+	background: radial-gradient(ellipse 25% 20px at 25% 80%, #777 0%, transparent 100%),
+				radial-gradient(ellipse 25% 20px at 73% 87%, #777 0%, transparent 100%);
+	padding-bottom: 10%;
+	position: relative;
+	z-index: 5;
+}
+
+@media (min-width: 56em) /* ~900px */
+{
+	.article-box-model
+	{
+		padding: 42.5% 12% 0 6%;
+		position: absolute;
+		top: 0;
+		width: 30%;
 	}
 }
