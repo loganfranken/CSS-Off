@@ -35,6 +35,11 @@ abbr
 	border: 0;
 }
 
+ul
+{
+	list-style: none;
+}
+
 /* =HEADER
 ------------------------------------------------------- */
 
@@ -526,7 +531,7 @@ header h1
 
 .article-blocks
 {
-	margin: 1em 0;
+	margin: 1em 0 0;
 }
 
 .article-blocks h1
@@ -569,4 +574,155 @@ header h1
 {
 	color: #B8B1AD;
 	text-decoration: none;
+}
+
+/* =ARTICLE-BORDER
+------------------------------------------------------- */
+
+.article-border
+{
+	padding: 10em 5% 1em;
+	position: relative;
+}
+
+.article-border .people
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.article-border .people li
+{
+	display: none;
+	text-align: center;
+	width: 100%;
+}
+
+.article-border .people li:nth-child(1)
+{
+	display: block;
+}
+
+.article-border h1, .article-border .tagline
+{
+	font-family: "Oswald", sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.article-border h1
+{
+	border-bottom: 0.25em solid #000;
+	font-size: 2.1em;
+	text-transform: uppercase;
+}
+
+.article-border .tagline
+{
+	border-bottom: 0.125em solid #000;
+	font-size: 0.99em;
+	margin-bottom: 0.75em;
+	padding: 0.5em 0;
+}
+
+.article-border .facts
+{
+	font-family: "Merriweather", serif;
+}
+
+.article-border .facts li
+{
+	display: inline;
+}
+
+.article-border .facts li:before
+{
+	content: "\2219";
+	font-size: 3.8em;
+	line-height: 0.1em;
+	vertical-align: middle;
+}
+
+.article-border .facts li:first-child
+{
+	padding: 0;
+}
+
+.article-border .facts li:first-child:before
+{
+	content: "";
+}
+
+.article-border .country
+{
+	font-weight: 700;
+}
+
+@media (min-width: 32em) /* ~500px */
+{
+	.article-border .people li
+	{
+		float: left;
+		width: 50%;
+	}
+
+	.article-border .people li:nth-child(2)
+	{
+		display: block;
+	}
+
+	.article-border h1
+	{
+		font-size: 3.25em;
+	}
+
+	.article-border .tagline
+	{
+		font-size: 1.65em;
+	}
+}
+
+@media (min-width: 44em) /* ~700px */
+{
+	.article-border .people li
+	{
+		float: left;
+		width: 33%;
+	}
+
+	.article-border .people li:nth-child(3)
+	{
+		display: block;
+	}
+
+	.article-border h1
+	{
+		font-size: 4.7em;
+	}
+
+	.article-border .tagline
+	{
+		font-size: 2.2em;
+	}
+}
+
+@media (min-width: 56em) /* ~900px */
+{
+	.article-border
+	{
+		float: left;
+		width: 70%;
+	}
+
+	.article-border .people li
+	{
+		float: left;
+		width: 25%;
+	}
+
+	.article-border .people li:nth-child(4)
+	{
+		display: block;
+	}
 }
