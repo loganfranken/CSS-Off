@@ -726,3 +726,172 @@ header h1
 		display: block;
 	}
 }
+
+/* =ARTICLE-MOVIE
+------------------------------------------------------- */
+
+.article-movie
+{
+	background: #3A83BB;
+	background-image: radial-gradient(ellipse 15px 15px at 50% 100%, #FFF 0%, #FFF 100%, transparent 100%);
+	color: #FFF;
+	font-family: "Lora", italic;
+	overflow: auto;
+	position: relative;
+}
+
+.article-movie h1
+{
+	border-bottom: 9px solid #619CC9;
+	font-family: "Oswald", sans-serif;
+	font-size: 2.75em;
+	line-height: 1em;
+	margin: 5% 5%;
+	padding-bottom: 5%;
+	text-transform: uppercase;
+}
+
+.article-movie h1 .subheading
+{
+	display: block;
+	font-size: 0.7em;
+}
+
+.article-movie figure
+{
+	background: radial-gradient(ellipse 38% 15px at 50% 89%, #333 0%, transparent 100%);
+	padding-bottom: 1em;
+	width: 100%;
+}
+
+.article-movie .description
+{
+	display: block;
+	margin-bottom: 8%;
+	padding: 0 5%;
+}
+
+.article-movie section
+{
+	margin: 5% 0;
+	padding: 5% 0;
+}
+
+.article-movie .rating
+{
+	border: 3px dashed #234F70;
+	border-width: 3px 0;
+	box-shadow: inset 0 5px 0 #3476A8,
+				inset 0 -5px 0 #3476A8;
+	overflow: auto;
+	position: relative;
+}
+
+.article-movie .rating h1
+{
+	border: none;
+	color: #75A8D0;
+	position: absolute;
+	font-size: 2.8em;
+	line-height: 0.8em;
+	margin: 0;
+	width: 50%;
+}
+
+.article-movie .rating h1 .subheading
+{
+	font-size: 0.45em;
+}
+
+.article-movie .percentage
+{
+	color: #FFF;
+	display: block;
+	font-family: "Oswald", sans-serif;
+	font-size: 4.5em;
+	line-height: 1.4em;
+	margin: -0.15em auto 5%;
+	text-align: right;
+	width: 90%;
+}
+
+.article-movie .percentage:after
+{
+	background: linear-gradient(to right, #FFF 20%, #619cc9 20%);
+	display: block;
+	content: ' ';
+	height: 10px;
+}
+
+.article-movie .premiere
+{
+	font-family: "Oswald", sans-serif;
+	padding: 0 5% 10%;
+	text-transform: uppercase;
+}
+
+.article-movie .premiere h1
+{
+	background: linear-gradient(to right, #619CC9 20%, transparent 20%, transparent 80%, #619CC9 80%);
+	border: 0;
+	color: #88AED1;
+	font-size: 1.25em;
+	margin: 1.5em 0 0.5em;
+	padding: 0; 
+}
+
+.article-movie .premiere span
+{
+	display: block;
+	font-size: 2.4em;
+	text-align: center;
+	line-height: 1.25em;
+}
+
+.article-movie .premiere .location
+{
+	color: #88AED1;
+	font-size: 2.5em;
+}
+
+.article-movie .premiere .date
+{
+	font-size: 3.4em;
+	line-height: 1em;
+}
+
+@media (min-width: 32em) /* ~500px */
+{
+	.article-movie .rating
+	{
+		float: left;
+		width: 50%;
+	}
+
+	.article-movie .premiere
+	{
+		float: right;
+		width: 40%;
+	}
+}
+
+@media (min-width: 43em) /* ~700px */
+{
+	.article-movie figure
+	{
+		float: left;
+		width: 50%;
+	}
+
+	.article-movie .rating
+	{
+		float: left;
+		width: 33%;
+	}
+
+	.article-movie .premiere
+	{
+		float: left;
+		width: 33%;
+	}
+}
