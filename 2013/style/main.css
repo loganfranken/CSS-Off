@@ -1,3 +1,15 @@
+.preview
+{
+	background: url('../images/preview.jpg') top center;
+	display: none;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	height: 4040px;
+	width: 100%;
+	z-index: 1000;
+}
+
 html, body, h1, ul, figure
 {
 	margin: 0;
@@ -19,8 +31,9 @@ body
 
 h1
 {
-	font-weight: normal;
+	font: normal "Oswald", sans-serif;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 img
@@ -45,10 +58,10 @@ ul
 
 header
 {
-
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	margin-bottom: 1em;
 	overflow: auto;
 	position: relative;
 	z-index: 2;
@@ -57,17 +70,13 @@ header
 header .issue-info
 {
 	color: #B0AEB8;
-	font-family: "Lora", serif;
-	font-size: 0.75em;
-	font-style: italic;
+	font: italic 0.75em "Lora", serif;
 }
 
 header h1
 {
 	color: #333;
-	font-family: "Lato", sans-serif;
-	font-size: 4.5em;
-	font-weight: 100;
+	font: 100 4.5em "Lato", sans-serif;
 }
 
 @media (min-width: 32em) /* ~500px */
@@ -87,7 +96,7 @@ header h1
 {
 	header
 	{
-		margin: 0 6% 0 6%;
+		margin: 0 6%;
 	}
 
 	header h1
@@ -123,12 +132,20 @@ header h1
 {
 	header
 	{
-		margin: 0 12.578125% 0 11.171875%;
+		margin: 0 12.578125% 0 9.5%;
 	}
 
 	header h1
 	{
 		font-size: 14em;
+		letter-spacing: 0.04em;
+		line-height: 0.82em;
+		padding-top: 3%;
+	}
+
+	header h1:after
+	{
+		letter-spacing: -0.05em;
 	}
 }
 
@@ -149,9 +166,7 @@ header h1
 {
 	color: #FFF;
 	background: #FDCD84;
-	font-family: "Oswald", sans-serif;
 	font-size: 2em;
-	text-transform: uppercase;
 	text-shadow: 0 2px 2px #B9955E;
 	padding: 5% 0 3%;
 }
@@ -222,7 +237,7 @@ header h1
 		line-height: 1em;
 	}
 
-	.feature-img-wrapper
+	.feature figure
 	{
 		background: radial-gradient(ellipse 150px 10px at 23% 91%, #777 0%, transparent 100%);
 		margin-left: -45%;
@@ -233,7 +248,7 @@ header h1
 		max-width: 132%;
 	}
 
-	.feature img
+	.feature figure img
 	{
 		transform: rotate(-3deg);
 	}
