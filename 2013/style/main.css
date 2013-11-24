@@ -213,9 +213,9 @@ header h1
 	{
 		background: none;
 		color: rgba(253, 205, 132, 0);
-		font-size: 4.4em;
+		font-size: 3.75em;
 		line-height: 1.05em;
-		margin: 56.5% 0 0 -10%;
+		margin: 56.5% 0 0 5%;
 		position: relative;
 		text-align: left;
 		text-shadow: -0.7em -0.2em 20px #333;
@@ -243,12 +243,12 @@ header h1
 	.feature figure
 	{
 		background-image: radial-gradient(ellipse 24% 3% at 25.5% 92%, #888 0%, transparent 100%);
-		margin-left: -45%;
+		margin-left: -20%;
 		position: absolute;
 		padding-bottom: 10%;
 		padding-left: 10%;
 		top: 3.5%;
-		max-width: 132%;
+		max-width: 122%;
 	}
 
 	.feature figure img
@@ -267,6 +267,7 @@ header h1
 {
 	.feature h1
 	{
+		font-size: 4.4em;
 		letter-spacing: 0.025em;
 		margin: 52.5% 0 0 5%;
 	}
@@ -293,7 +294,7 @@ header h1
 .article-box
 {
 	background: #CDC9DD;
-	background: linear-gradient(to bottom, #CDC9DD 37%, #D9D5E5 37%, #CFCBDE 100%);
+	background-image: linear-gradient(to bottom, #CDC9DD 42%, #D9D5E5 42%, #CFCBDE 100%);
 	color: #6E6C77;
 	font-family: "Lato", sans-serif;
 	padding: 8% 5% 3%;
@@ -316,20 +317,46 @@ header h1
 
 .article-box img
 {
-	background: radial-gradient(ellipse 25% 20px at 25% 80%, #777 0%, transparent 100%),
-				radial-gradient(ellipse 25% 20px at 73% 87%, #777 0%, transparent 100%);
+	background-image:	radial-gradient(ellipse 25% 5% at 25% 80%, #777 0%, transparent 100%),
+						radial-gradient(ellipse 25% 5% at 73% 87%, #777 0%, transparent 100%);
 	padding-bottom: 10%;
 	position: relative;
 	z-index: 5;
+}
+
+@media (min-width: 32em) /* ~500px */
+{
+	.article-box
+	{
+		background-image: linear-gradient(to bottom, #CDC9DD 52%, #D9D5E5 52%, #CFCBDE 100%);
+	}
+}
+
+@media (min-width: 39em)
+{
+	.article-box img
+	{
+		background-image:	radial-gradient(ellipse 25% 5% at 25% 75%, #777 0%, transparent 100%),
+							radial-gradient(ellipse 25% 5% at 73% 82%, #777 0%, transparent 100%);
+	}
+}
+
+@media (min-width: 55em) 
+{
+	.article-box img
+	{
+		background-image:	radial-gradient(ellipse 25% 5% at 25% 72%, #777 0%, transparent 100%),
+							radial-gradient(ellipse 25% 5% at 73% 78%, #777 0%, transparent 100%);
+	}
 }
 
 @media (min-width: 56em) /* ~900px */
 {
 	.article-box
 	{
-		background: linear-gradient(to bottom, #CDC9DD 68%, #D9D5E5 68%, #CFCBDE 97%, transparent 97%);
-		margin-top: -45%;
-		padding: 41.5% 5.5% 0 5%;
+		background-image: linear-gradient(to bottom, #CDC9DD 60%, #D9D5E5 60%, #CFCBDE 97%, transparent 97%);
+		margin-top: -47%;
+		padding: 43% 5.5% 0 5%;
 		top: 0;
 		width: 35%;
 	}
@@ -340,12 +367,34 @@ header h1
 		margin: -6% 0 0 33%;
 	}
 
+	.article-box img
+	{
+		background-image:	radial-gradient(ellipse 25% 5% at 25% 80%, #777 0%, transparent 100%),
+							radial-gradient(ellipse 25% 5% at 73% 87%, #777 0%, transparent 100%);
+	}
+
 	.article-box p
 	{
 		font-size: 1.25em;
 		margin-left: 25%;
 		margin-right: -10%;
 		width: 80%;
+	}
+}
+
+@media (min-width: 63em) /* ~1000px */
+{
+	.article-box
+	{
+		background-image: linear-gradient(to bottom, #CDC9DD 63%, #D9D5E5 63%, #CFCBDE 97%, #FFF 97%);
+	}
+}
+
+@media (min-width: 80em) /* ~900px */
+{
+	.article-box
+	{
+		background-image: linear-gradient(to bottom, #CDC9DD 67%, #D9D5E5 67%, #CFCBDE 97%, #FFF 97%);
 	}
 }
 
