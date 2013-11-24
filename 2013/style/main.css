@@ -31,7 +31,8 @@ body
 
 h1
 {
-	font: normal "Oswald", sans-serif;
+	font-family: "Oswald", sans-serif;
+	font-weight: normal;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -51,6 +52,11 @@ abbr
 ul
 {
 	list-style: none;
+}
+
+.feature .content
+{
+	padding: 0 5%;
 }
 
 /* =HEADER
@@ -155,11 +161,7 @@ header h1
 .feature
 {
 	font-family: "Merriweather", serif;
-}
-
-.feature .content
-{
-	padding: 0 5%;
+	padding-bottom: 1em;
 }
 
 .feature h1
@@ -168,16 +170,16 @@ header h1
 	background: #FDCD84;
 	font-size: 2em;
 	text-shadow: 0 2px 2px #B9955E;
-	padding: 5% 0 3%;
+	line-height: 0.9em;
+	margin-bottom: 0.5em;
+	padding: 3% 0 5%;
 }
 
 .feature .subheading
 {
 	color: #B9955E;
 	display: block;
-	font-family: "Merriweather", serif;
-	font-size: 0.45em;
-	font-weight: 300;
+	font: 300 0.45em/2em "Merriweather", serif;
 	letter-spacing: 0.15em;
 	text-shadow: none;
 }
@@ -187,7 +189,7 @@ header h1
 	.feature h1
 	{
 		font-size: 3em;
-		padding: 3% 0 1%;
+		padding: 3% 0 4%;
 	}
 
 	.feature .subheading
@@ -203,7 +205,7 @@ header h1
 		position: absolute;
 		right: 0;
 		top: 4.5%;
-		width: 45%;
+		width: 54.5%;
 		z-index: 1;
 	}
 
@@ -211,8 +213,9 @@ header h1
 	{
 		background: none;
 		color: rgba(253, 205, 132, 0);
+		font-size: 4.4em;
 		line-height: 1.05em;
-		margin: 72% 0 0 -10%;
+		margin: 56.5% 0 0 -10%;
 		position: relative;
 		text-align: left;
 		text-shadow: -0.7em -0.2em 20px #333;
@@ -239,18 +242,24 @@ header h1
 
 	.feature figure
 	{
-		background: radial-gradient(ellipse 150px 10px at 23% 91%, #777 0%, transparent 100%);
+		background-image: radial-gradient(ellipse 24% 3% at 25.5% 92%, #888 0%, transparent 100%);
 		margin-left: -45%;
 		position: absolute;
 		padding-bottom: 10%;
 		padding-left: 10%;
-		top: 10%;
+		top: 3.5%;
 		max-width: 132%;
 	}
 
 	.feature figure img
 	{
-		transform: rotate(-3deg);
+		-webkit-transform: rotate(-3.75deg);
+		transform: rotate(-3.75deg);
+	}
+
+	.feature .content
+	{
+		font-size: 1.5em;
 	}
 }
 
@@ -258,8 +267,23 @@ header h1
 {
 	.feature h1
 	{
-		font-size: 4.25em;
-		margin: 68% 0 0 -10%;
+		letter-spacing: 0.025em;
+		margin: 52.5% 0 0 5%;
+	}
+
+	.feature figure
+	{
+		margin-left: -27%;
+		top: 3.5%;
+		max-width: 112%;
+	}
+
+	.feature p
+	{
+		letter-spacing: -0.01em;
+		line-height: 1.4em;
+		margin-top: -0.05em;
+		width: 80%;
 	}
 }
 
@@ -299,7 +323,7 @@ header h1
 		margin-top: -45%;
 		padding: 42.5% 12% 0 6%;
 		top: 0;
-		width: 30%;
+		width: 20%;
 	}
 }
 
