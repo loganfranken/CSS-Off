@@ -631,8 +631,21 @@ header h1
 	}
 }
 
+@media (min-width: 68em) /* ~850px */
+{
+	.article-bullet li
+	{
+		height: 22em;
+	}
+}
+
 @media (min-width: 80em) /* ~850px */
 {
+	.article-bullet li
+	{
+		height: 25em;
+	}
+
 	.article-bullet h1
 	{
 		letter-spacing: 0.08em;
@@ -640,7 +653,7 @@ header h1
 	}
 }
 
-/* =ARTICLE-STAYING-AFLOAT
+/* =ARTICLE-AFLOAT
 ------------------------------------------------------- */
 
 .article-afloat
@@ -648,6 +661,8 @@ header h1
 	color: #464646;
 	font-family: "Lato", sans-serif;
 	padding: 0 5%;
+	position: relative;
+	z-index: 3;
 }
 
 .article-afloat h1
@@ -681,9 +696,7 @@ header h1
 {
 	.article-afloat
 	{
-		padding-top: 1.4%;
-		padding-left: 0;
-		padding-right: 2.75%;
+		padding: 1.4% 2.75% 0 0;
 	}
 
 	.article-afloat, .article-afloat h1
@@ -720,15 +733,15 @@ header h1
 .article-blocks
 {
 	margin: 1em 0 0;
+	position: relative;
+	z-index: 2;
 }
 
 .article-blocks h1
 {
 	background: #524741;
-	font-family: "Oswald", sans-serif;
 	color: #FFF;
-	text-transform: uppercase;
-	padding: 3% 0;
+	padding: 4% 0;
 }
 
 .article-blocks .photo
@@ -741,6 +754,7 @@ header h1
 {
 	position: relative;
 	z-index: -1;
+	width: 100%;
 }
 
 .article-blocks .info
@@ -749,7 +763,7 @@ header h1
 	color: #FFF;
 	font-family: "Merriweather", sans-serif;
 	font-weight: 300;
-	padding: 5%;
+	padding: 3% 5% 7%;
 }
 
 .article-blocks .credit
@@ -762,6 +776,69 @@ header h1
 {
 	color: #B8B1AD;
 	text-decoration: none;
+}
+
+@media (min-width: 37em)
+{
+	.article-blocks h1
+	{
+		font-size: 2.5em;
+	}
+
+	.article-blocks .info
+	{
+		padding-bottom: 4%;
+	}
+}
+
+@media (min-width: 56em)
+{
+	.article-blocks h1
+	{
+		padding: 2% 0;
+	}
+}
+
+@media (min-width: 60em)
+{
+	.article-blocks
+	{
+		font-size: 1.55em;
+		margin-top: -1%;
+	}
+
+	.article-blocks h1
+	{
+		font-size: 2em;
+		letter-spacing: 0.025em;
+		margin: 0;
+		padding: 0.45em 0;
+	}
+
+	.article-blocks .info
+	{
+		letter-spacing: 0.01em;
+		line-height: 1.4em;
+		padding: 2% 2.6%;
+	}
+
+	.article-blocks .info p
+	{
+		margin: 0 0 0.75em;
+	}
+
+	.article-blocks .credit
+	{
+		font-size: 0.7em;
+	}
+}
+
+@media (min-width: 80em)
+{
+	.article-blocks
+	{
+		margin-top: -3%;
+	}
 }
 
 /* =ARTICLE-BORDER
