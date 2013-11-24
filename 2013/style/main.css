@@ -59,6 +59,14 @@ ul
 	padding: 0 5%;
 }
 
+@media (min-width: 75em) /* ~1280px */
+{
+	.inner-container
+	{
+		margin: 0 6%;
+	}
+}
+
 @media (min-width: 80em) /* ~1280px */
 {
 	.inner-container
@@ -538,7 +546,7 @@ header h1
 	{
 		float: none;
 		display: block;
-		margin: 40% auto 0;
+		margin: 20% auto 0;
 	}
 
 	.article-bullet .info
@@ -553,6 +561,11 @@ header h1
 	.russian .info
 	{
 		top: 62%;
+	}
+
+	.bthp img
+	{
+		margin-top: 10%;
 	}
 
 	.article-bullet .winchester img
@@ -574,8 +587,13 @@ header h1
 	}
 }
 
-@media (min-width: 54em) /* ~850px */
+@media (min-width: 60em) /* ~850px */
 {
+	.article-bullet h1
+	{
+		font-size: 1em;
+	}
+
 	.article-bullet
 	{
 		float: right;
@@ -591,12 +609,17 @@ header h1
 	{
 		border-bottom: none;
 		border-right: 1px solid #E5E5E5;
-		width: 19.9%;
+		width: 19.8%;
 	}
 
 	.article-bullet li:last-child
 	{
 		border-right: none;
+	}
+
+	.article-bullet img
+	{
+		margin-top: 45%;
 	}
 }
 
@@ -604,7 +627,6 @@ header h1
 {
 	.article-bullet h1
 	{
-		font-size: 1em;
 		letter-spacing: 0.08em;
 		padding: 1% 0;
 	}
