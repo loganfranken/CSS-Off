@@ -2,7 +2,7 @@
 {
 	background: url('../images/preview.jpg') top center;
 	display: none;
-	opacity: 0.2;
+	opacity: 0.5;
 	position: absolute;
 	top: 40px;
 	height: 4040px;
@@ -1428,7 +1428,8 @@ header h1
 	clear: both;
 	font-family: "Lora", serif;
 	font-style: italic;
-	margin-top: 5%;
+	margin: 5% 0 0 0;
+	padding-bottom: 4.7%;
 	position: relative;
 	z-index: 4;
 }
@@ -1516,7 +1517,80 @@ header h1
 	}
 }
 
+/* =FOOTER
+------------------------------------------------------- */
+
 footer
 {
-	display: none;
+	border-top: 1px solid #E5E5E5;
+	clear: both;
+	margin: 0 auto;
+	max-width: 60em;
+	overflow: auto;
+	padding: 5%;
+}
+
+footer .issue-info, footer address
+{
+	display: block;
+	text-align: center;
+}
+
+footer .issue-info
+{
+	color: #666666;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 1em;
+}
+
+footer .volume
+{
+	color: #8C8C8C;
+}
+
+footer address
+{
+	color: #989898;
+	font-family: "Merriweather", serif;
+	font-size: 0.81em;
+	font-style: normal;
+}
+
+footer .line
+{
+	display: block;
+}
+
+footer .street
+{
+	font-weight: 700;
+}
+
+@media (min-width: 43em)
+{
+	footer
+	{
+		padding: 0 5% 10%;
+	}
+
+	footer .issue-info
+	{
+		float: left;
+		padding-top: 2%;
+	}
+
+	footer address
+	{
+		float: right;
+		padding-top: 2.5%;
+		text-align: right;
+	}
+}
+
+@media (min-width: 63em)
+{
+	footer
+	{
+		padding: 0 0 10%;
+	}
 }
