@@ -4,7 +4,7 @@
 	display: none;
 	opacity: 0.2;
 	position: absolute;
-	top: 30px;
+	top: 40px;
 	height: 4040px;
 	width: 100%;
 	z-index: 1000;
@@ -330,6 +330,7 @@ header h1
 	color: #5F5D66;
 	font-family: "Lora", serif;
 	font-size: 1.5em;
+	font-style: italic;
 	font-weight: 700;
 	text-transform: capitalize;
 }
@@ -1418,7 +1419,104 @@ header h1
 	}
 }
 
-.article-overflow, footer
+/* =ARTICLE-OVERFLOW
+------------------------------------------------------- */
+
+.article-overflow
+{
+	color: #5E6C74;
+	clear: both;
+	font-family: "Lora", serif;
+	font-style: italic;
+	margin-top: 5%;
+	position: relative;
+	z-index: 4;
+}
+
+.article-overflow h1
+{
+	background: url(../images/overflow.png) no-repeat;
+	background-size: 100% auto;
+	height: 407px;
+	text-align: left;
+	text-indent: -1000em;
+	max-width: 1058px;
+	width: 210%;
+}
+
+.article-overflow .content
+{
+	margin-top: -15em;
+	padding: 0 5%;
+}
+
+.article-overflow .location
+{
+	font-weight: 700;
+}
+
+.article-overflow .closing
+{
+	display: block;
+}
+
+@media (min-width: 60em)
+{
+	.article-overflow
+	{
+		float: left;
+		margin: -2.5% 0 0 -2.1%;
+		width: 100%;
+	}
+
+	.article-overflow h1
+	{
+		left: -2.2%;
+		z-index: 5;
+	}
+
+	.article-overflow .content
+	{
+		font-size: 0.95em;
+		padding: 0;
+	}
+
+	.article-overflow p
+	{
+		clear: both;
+		display: block;
+	}
+
+	.article-overflow p:nth-child(1)
+	{
+		float: right;
+		text-align: right;
+		-webkit-transform: rotate(2deg);
+		transform: rotate(2deg);
+		width: 76%;
+	}
+
+	.article-overflow p:nth-child(2)
+	{
+		float: left;
+		text-align: left;
+		-webkit-transform: rotate(-1deg);
+		transform: rotate(-1deg);
+		width: 76%;
+	}
+
+	.article-overflow p:nth-child(3)
+	{
+		float: right;
+		text-align: left;
+		-webkit-transform: rotate(1deg);
+		transform: rotate(1deg);
+		margin-right: 13%;
+		width: 74%;
+	}
+}
+
+footer
 {
 	display: none;
 }
