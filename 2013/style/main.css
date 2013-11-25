@@ -4,7 +4,7 @@
 	display: none;
 	opacity: 0.2;
 	position: absolute;
-	top: 25px;
+	top: 30px;
 	height: 4040px;
 	width: 100%;
 	z-index: 1000;
@@ -52,11 +52,6 @@ abbr
 ul
 {
 	list-style: none;
-}
-
-.feature .content
-{
-	padding: 0 5%;
 }
 
 @media (min-width: 60em)
@@ -206,6 +201,11 @@ header h1
 	font: 300 0.45em/2em "Merriweather", serif;
 	letter-spacing: 0.15em;
 	text-shadow: none;
+}
+
+.feature .content
+{
+	padding: 0 5%;
 }
 
 @media (min-width: 32em) /* ~500px */
@@ -846,7 +846,7 @@ header h1
 
 .article-border
 {
-	padding: 10em 5% 1em;
+	padding: 10em 5% 7%;
 	position: relative;
 }
 
@@ -854,7 +854,7 @@ header h1
 {
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: 90%;
 }
 
 .article-border .people li
@@ -878,7 +878,7 @@ header h1
 
 .article-border h1
 {
-	border-bottom: 0.25em solid #000;
+	border-bottom: 0.26em solid #000;
 	font-size: 2.1em;
 	text-transform: uppercase;
 }
@@ -963,21 +963,42 @@ header h1
 
 	.article-border h1
 	{
-		font-size: 4.7em;
+		font-size: 4.5em;
 	}
 
 	.article-border .tagline
 	{
-		font-size: 2.2em;
+		font-size: 2em;
 	}
 }
 
-@media (min-width: 56em) /* ~900px */
+@media (min-width: 60em) /* ~900px */
 {
 	.article-border
 	{
 		float: left;
-		width: 70%;
+		font-size: 1.2em;
+		letter-spacing: 0.027em;
+		padding: 7.1em 0 0 0;
+		width: 72.5%;
+	}
+
+	.article-border h1
+	{
+		font-size: 3.8em;
+		padding-bottom: 0.04em;
+	}
+
+	.article-border .tagline
+	{
+		font-size: 1.75em;
+		margin-bottom: 0.3em;
+		padding: 0.3em 0 0.4em;
+	}
+
+	.article-border .people
+	{
+		width: 104%;
 	}
 
 	.article-border .people li
@@ -992,6 +1013,14 @@ header h1
 	}
 }
 
+@media (min-width: 80em) /* ~900px */
+{
+	.article-border
+	{
+		font-size: 1.3em;
+	}
+}
+
 /* =ARTICLE-MOVIE
 ------------------------------------------------------- */
 
@@ -1000,6 +1029,7 @@ header h1
 	background: #3A83BB;
 	background-image: radial-gradient(ellipse 15px 15px at 50% 100%, #FFF 0%, #FFF 100%, transparent 100%);
 	color: #FFF;
+	display: none;
 	font-family: "Lora", italic;
 	overflow: auto;
 	position: relative;
@@ -1159,4 +1189,9 @@ header h1
 		float: left;
 		width: 33%;
 	}
+}
+
+.article-overflow, footer
+{
+	display: none;
 }
