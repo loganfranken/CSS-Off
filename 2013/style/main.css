@@ -748,6 +748,7 @@ header h1
 .article-blocks .photo
 {
 	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+	display: none;
 	position: relative;
 }
 
@@ -779,6 +780,83 @@ header h1
 	text-decoration: none;
 }
 
+.article-blocks .map
+{
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 65.72916666666667%;
+	height: 0;
+}
+
+.article-blocks .map:before
+{
+	background: url('../images/beatles.jpg') no-repeat;
+	content: ' ';
+	height: 100%;
+	position: absolute;
+	top: 0;
+	-moz-transition: ease 1s;
+	transition: ease 1s;
+	width: 85%;
+	z-index: 4;
+}
+
+.article-blocks .map:hover:before
+{
+	width: 0%;
+}
+
+.article-blocks .map:after
+{
+	background: url('../images/beatles.jpg') no-repeat;
+	content: ' ';
+	height: 80%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-moz-transition: ease 1s;
+	transition: ease 1s;
+	width: 100%;
+	z-index: 4;
+}
+
+.article-blocks .map:hover:after
+{
+	height: 0%;
+}
+
+.article-blocks .map iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.article-blocks .map-wrapper:before
+{
+	background: #A49892;
+	background-image: linear-gradient(180deg, #A49892 0%, #A49892 85%, #6A5C55 97%);
+	box-shadow: inset 0 0 5px #FFF;
+	bottom: 0;
+	content: ' ';
+	height: 200%;
+	position: absolute;
+	right: -60.5%;
+	-webkit-transform: rotate(-40.5deg);
+	transform: rotate(-40.5deg);
+	-moz-transition: ease 1s;
+	transition: ease 1s;
+	width: 200%;
+	z-index: 3;
+}
+
+.article-blocks .map:hover .map-wrapper:before
+{
+	right: 0;
+}
+
 @media (min-width: 37em)
 {
 	.article-blocks h1
@@ -800,12 +878,26 @@ header h1
 	}
 }
 
+@media (max-width: 56em)
+{
+	.article-blocks .map
+	{
+		display: none;
+	}
+
+	.article-blocks .photo
+	{
+		display: block;
+	}
+}
+
 @media (min-width: 60em)
 {
 	.article-blocks
 	{
 		font-size: 1.55em;
 		margin-top: -1%;
+		max-width: 38em;
 	}
 
 	.article-blocks h1
@@ -839,6 +931,7 @@ header h1
 	.article-blocks
 	{
 		margin-top: -3%;
+		max-width: 100%;
 	}
 }
 
