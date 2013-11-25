@@ -134,7 +134,7 @@ header h1
 		padding-top: 5.85%;
 		overflow: hidden;
 		text-align: left;
-		width: 2em;
+		width: 1.9em;
 	}
 
 	header h1:after
@@ -985,7 +985,7 @@ header h1
 
 	.article-border h1
 	{
-		font-size: 3.8em;
+		font-size: 3.75em;
 		padding-bottom: 0.04em;
 	}
 
@@ -1027,23 +1027,21 @@ header h1
 .article-movie
 {
 	background: #3A83BB;
-	background-image: radial-gradient(ellipse 15px 15px at 50% 100%, #FFF 0%, #FFF 100%, transparent 100%);
+	background-image: radial-gradient(ellipse 15px 15px at 50% 100%, #FFF 0%, #FFF 99%, transparent 100%);
 	color: #FFF;
-	display: none;
 	font-family: "Lora", italic;
 	overflow: auto;
+	padding: 5% 0;
 	position: relative;
 }
 
 .article-movie h1
 {
 	border-bottom: 9px solid #619CC9;
-	font-family: "Oswald", sans-serif;
 	font-size: 2.75em;
 	line-height: 1em;
 	margin: 5% 5%;
 	padding-bottom: 5%;
-	text-transform: uppercase;
 }
 
 .article-movie h1 .subheading
@@ -1054,7 +1052,7 @@ header h1
 
 .article-movie figure
 {
-	background: radial-gradient(ellipse 38% 15px at 50% 89%, #333 0%, transparent 100%);
+	background-image: radial-gradient(ellipse 38% 15px at 50% 89%, #333 0%, transparent 100%);
 	padding-bottom: 1em;
 	width: 100%;
 }
@@ -1062,14 +1060,22 @@ header h1
 .article-movie .description
 {
 	display: block;
+	font-style: italic;
+	line-height: 1.5em;
 	margin-bottom: 8%;
 	padding: 0 5%;
+	text-align: center;
 }
 
 .article-movie section
 {
 	margin: 5% 0;
-	padding: 5% 0;
+	padding: 7% 0 5%;
+}
+
+.article-movie section:last-child
+{
+	padding-bottom: 1%;
 }
 
 .article-movie .rating
@@ -1090,6 +1096,8 @@ header h1
 	font-size: 2.8em;
 	line-height: 0.8em;
 	margin: 0;
+	padding-left: 3%;
+	text-align: left;
 	width: 50%;
 }
 
@@ -1112,7 +1120,7 @@ header h1
 
 .article-movie .percentage:after
 {
-	background: linear-gradient(to right, #FFF 20%, #619cc9 20%);
+	background-image: linear-gradient(to right, #FFF 20%, #619cc9 20%);
 	display: block;
 	content: ' ';
 	height: 10px;
@@ -1127,7 +1135,7 @@ header h1
 
 .article-movie .premiere h1
 {
-	background: linear-gradient(to right, #619CC9 20%, transparent 20%, transparent 80%, #619CC9 80%);
+	background-image: linear-gradient(to right, #619CC9 20%, transparent 20%, transparent 80%, #619CC9 80%);
 	border: 0;
 	color: #88AED1;
 	font-size: 1.25em;
@@ -1155,23 +1163,118 @@ header h1
 	line-height: 1em;
 }
 
+.article-movie .content
+{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 20em;
+}
+
 @media (min-width: 32em) /* ~500px */
 {
+	.article-movie h1
+	{
+		margin-bottom: 2.5%;
+		padding-bottom: 2.5%;
+	}
+
+	.article-movie .description
+	{
+		font-size: 1.3em;
+		margin-bottom: 0;
+	}
+
+	.article-movie figure
+	{
+		background-image: radial-gradient(ellipse 20% 15px at 50% 89%, #333 0%, transparent 100%);
+	}
+
+	.article-movie .rating, .article-movie .premiere
+	{
+		border: 3px dashed #234F70;
+		border-width: 3px 0 0 0;
+		box-shadow: inset 0 5px 0 #3476A8;
+		margin-bottom: 2%;
+	}
+
 	.article-movie .rating
 	{
 		float: left;
 		width: 50%;
 	}
 
+	.article-movie .rating .content
+	{
+		max-width: 17em;
+	}
+
 	.article-movie .premiere
 	{
 		float: right;
+		padding: 2% 5% 0;
 		width: 40%;
+	}
+
+	.article-movie .rating h1
+	{
+		font-size: 2.5em;
+	}
+
+	.article-movie .percentage
+	{
+		font-size: 3.7em;
+	}
+
+	.article-movie .premiere h1
+	{
+		font-size: 1em;
+		line-height: 1em;
+	}
+
+	.article-movie .premiere .theatre
+	{
+		font-size: 1.65em;
+		line-height: 0.8em;
+	}
+
+	.article-movie .premiere .location
+	{
+		font-size: 1.7em;
+		line-height: 1.55em;
+	}
+
+	.article-movie .premiere .date
+	{
+		font-size: 2.4em;
+	}
+}
+
+@media (min-width: 36em)
+{
+	.article-movie .premiere
+	{
+		font-size: 1.2em;
 	}
 }
 
 @media (min-width: 43em) /* ~700px */
 {
+	.article-movie h1, .article-movie .description
+	{
+		float: right;
+		width: 40%;
+	}
+
+	.article-movie h1
+	{
+		font-size: 2.5em;
+	}
+
+	.article-movie .description
+	{
+		font-size: 1em;
+	}
+
 	.article-movie figure
 	{
 		float: left;
@@ -1181,13 +1284,125 @@ header h1
 	.article-movie .rating
 	{
 		float: left;
-		width: 33%;
+		font-size: 1.25em;
 	}
 
 	.article-movie .premiere
 	{
 		float: left;
-		width: 33%;
+		font-size: 1.35em;
+	}
+
+	.article-movie .premiere h1
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.article-movie .movie-info
+	{
+		overflow: auto;
+		width: 100%;
+	}
+}
+
+@media (min-width: 60em)
+{
+	.article-movie
+	{
+		float: right;
+		margin-top: 1.5%;
+		overflow: visible;
+		padding-bottom: 1.5%;
+		width: 23.5%;
+		z-index: 4;
+	}
+
+	.article-movie figure
+	{
+		background-image: radial-gradient(ellipse 38% 15px at 50% 89%, #333 0%, transparent 100%);
+		margin-top: -50%;
+		position: relative;
+		width: 100%;
+	}
+
+	.article-movie h1
+	{
+		font-size: 1.8em;
+		float: none;
+		margin-bottom: 0.5em;
+		width: 90%;
+	}
+
+	.article-movie h1 .subheading
+	{
+		font-size: 0.65em;
+		line-height: 2em;
+	}
+
+	.article-movie .description
+	{
+		margin-bottom: 0.5em;
+		text-align: left;
+		width: 90%;
+	}
+
+	.article-movie .rating
+	{
+		border-width: 3px 0;
+		box-shadow: inset 0 5px 0 #3476A8,
+					inset 0 -5px 0 #3476A8;
+		font-size: 0.8em;
+		margin-bottom: 0;
+		padding-bottom: 8%;
+		width: 100%;
+	}
+
+	.article-movie .premiere
+	{
+		float: none;
+		font-size: 0.95em;
+		width: 90%;
+	}
+
+	.article-movie .percentage
+	{
+		font-size: 3.75em;
+		line-height: 1.5em;
+	}
+}
+
+@media (min-width: 63em)
+{
+	.article-movie h1
+	{
+		font-size: 2em;
+	}
+
+	.article-movie h1 .subheading
+	{
+		font-size: 0.65em;
+		line-height: 2em;
+	}
+
+	.article-movie .rating
+	{
+		font-size: 0.85em;
+	}
+
+	.article-movie .premiere
+	{
+		border: none;
+		box-shadow: none;
+		clear: both;
+		font-size: 1em;
+		margin-bottom: 5%;
+	}
+
+	.article-movie .percentage
+	{
+		font-size: 3.75em;
+		line-height: 1.5em;
 	}
 }
 
