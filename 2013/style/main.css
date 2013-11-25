@@ -768,6 +768,13 @@ header h1
 	text-decoration: none;
 }
 
+.article-blocks .credit a:hover
+{
+	color: #FFF;
+	-moz-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+
 .article-blocks .map
 {
 	overflow: hidden;
